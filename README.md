@@ -32,10 +32,6 @@ We produced 95% Confidence Interval for the mean of loneliness level for male gr
 Hypothesis test suggested that the difference is statistically significant. So we are able to make the conclusion that young females are generally more lonely than young males. 
 
 
-
-            Fig.1
-            Fig.2
-
 2. Are people without any siblings more lonely than those who have?
 We produced 95% Confidence Interval for the mean of loneliness level for people who have siblings and those don’t have siblings.
 95% CI for single child: [2.72, 3.10] shown in Fig.3.
@@ -46,27 +42,13 @@ Hypothesis test suggested that there’s no statistically significant difference
 
 
 
-          Fig.3
-            Fig.4
 
 3. What traits are associated with loneliness?
 Since numerical variables can’t be directly compared with categorical variables, we did two correlation analyses, one with numerical variables(Appendix 2) and another with categorical variables (Appendix 3). As shown in Fig.5, not surprisingly, happiness, energy level and friends are negatively correlated with loneliness level. As illustrated in Fig.6, people who rarely use internet also seem to demonstrate low loneliness level. Interestingly, a person who likes branded clothing is also unlikely to be lonely. On the other end of the spectrum, shown in Fig.7 and Fig.8, people who have mood swings and have an education degree of primary school tend to be lonely, probably because the college students are too busy with coursework to feel lonely. 
 
-Fig.5
 
-Fig.6
-
-Fig.7
-
-Fig.8
 4. How to predict a young person’s loneliness?
 We firstly transformed our original loneliness variable to a dummy variable. Loneliness > 3 are considered as lonely. Loneliness<=3 are considered not lonely. Using our logistic regression model with 71 variables, we can predict a person’s loneliness level at an accuracy rate of 72% with (K-fold) test sets. The variables with largest coefficients can be found in Fig.9. In short, imagine a person likes writing, fear public speaking, enjoys using PC and spends a lot a gadgets, If he also happens to not like spending time with friends, hates geography and economy, doesn’t have problems with snakes, then chances are that he is feeling pretty lonely.
-
-Fig.9
-
-
-
-
 
 
 5. How can these findings be used?
@@ -74,7 +56,7 @@ As mentioned in the algorithm section above, we built a simple loneliness test b
 
 
 Testing
-In total, we wrote three classes of unit tests, each consisting two unit tests. The first class tests the “CI” and “twosampCI” function. We tested if these two function return the correct confidence intervals using the test case list1 and list2, as shown in the sample run1. The second class tests the “calculateloneliness” and “areyoulonely” functions. We tested if these functions calculated and displayed loneliness correctly, as shown in the sample run2. Our last class tests the hypothesis test functions, testing if it takes the correct variable of interest and returns the correct p-values.
+    In total, we wrote three classes of unit tests, each consisting two unit tests. The first class tests the “CI” and “twosampCI” function. We tested if these two function return the correct confidence intervals using the test case list1 and list2, as shown in the sample run1. The second class tests the “calculateloneliness” and “areyoulonely” functions. We tested if these functions calculated and displayed loneliness correctly, as shown in the sample run2. Our last class tests the hypothesis test functions, testing if it takes the correct variable of interest and returns the correct p-values.
 
 [Sample Run 1]
 import unittest
